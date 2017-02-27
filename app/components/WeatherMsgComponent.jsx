@@ -3,7 +3,7 @@ var React = require('react');
 var WeatherMsgComponent = ({temp, cityName}) => {
   return (
     <div>
-      <h2>It's {temp} for {cityName}</h2>
+      <h3 className="text-center">It's {temp} for {cityName}</h3>
     </div>
   );
 };

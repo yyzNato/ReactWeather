@@ -25084,8 +25084,8 @@
 	      'div',
 	      null,
 	      React.createElement(
-	        'h2',
-	        null,
+	        'h1',
+	        { className: 'text-center' },
 	        'Get Weather'
 	      ),
 	      React.createElement(WeatherFormComponent, { onChangeCity: this.handleChangeCity }),
@@ -25126,7 +25126,7 @@
 	      React.createElement('input', { placeholder: 'Enter city name', type: 'text', ref: 'cityName' }),
 	      React.createElement(
 	        'button',
-	        { type: 'submit' },
+	        { className: 'button expanded hollow', type: 'submit' },
 	        'Get Weather'
 	      )
 	    );
@@ -25139,7 +25139,7 @@
 /* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(8);
 
@@ -25148,14 +25148,14 @@
 	      cityName = _ref.cityName;
 
 	  return React.createElement(
-	    'div',
+	    "div",
 	    null,
 	    React.createElement(
-	      'h2',
-	      null,
-	      'It\'s ',
+	      "h3",
+	      { className: "text-center" },
+	      "It's ",
 	      temp,
-	      ' for ',
+	      " for ",
 	      cityName
 	    )
 	  );
